@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
+
 }
 
 /* Custom Scroll Bar CSS */
@@ -112,6 +113,7 @@ nav.sticky .menu-btn{
   height: 100vh;
   width: 100%;
   background: url("images/background.png") no-repeat;
+  background-color: #ffffff;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -170,22 +172,32 @@ nav.sticky .menu-btn{
 /* Those Elements Where We Have Apply Same CSS,
  I'm Selecting Directly 'Section Tag' and 'Class'  */
 section{
-  padding-top: 40px;
+  padding-top: 100px;
+  width: 100%;
+}
+section .about{
+  width: 100%;
+
+}
+section .about{
+  width: 100%;
 }
 section .content{
-  width: 80%;
-  margin: 40px auto;
+  width: 100%;
   font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
 }
 .about .about-details{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-direction:column;
+  gap: 25px;
+  text-align: center;
 }
 section .title{
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 section .title span{
   color: #0E2431;
@@ -210,23 +222,16 @@ section .title span::after{
   left: 50%;
   transform: translateX(-50%);
 }
-.about .about-details .left{
-  width: 45%;
-}
-.about .left img{
-  height: 400px;
-  width: 400px;
+.about img{
+  width: 200px;
   object-fit: cover;
   border-radius: 12px;
-}
-.about-details .right{
-  width: 55%;
 }
 section  .topic{
   color: #0E2431;
   font-size: 25px;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 section  .sub-topic{
   color: #0E2431;
@@ -235,8 +240,8 @@ section  .sub-topic{
   margin-bottom: 10px;
 }
 .about-details .right p{
-  text-align: justify;
   color: #0E2431;
+  margin: 0 30px;
 }
 section .button{
   margin: 16px 0;
@@ -261,56 +266,81 @@ section .button button:hover{
 
  /* My Skills CSS */
  .skills{
-   background: #F0F8FF;
+   background: #ffffff;
+   padding-bottom: 40px;
  }
- .skills .content{
-   padding: 40px 0;
- }
- .skills .skills-details{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
- }
- .skills-details .text{
-   width: 50%;
- }
- .skills-details p{
-   color: #0E2431;
-   text-align: justify;
- }
-.skills .skills-details .experience{
-  display: flex;
-  align-items: center;
-  margin: 0 10px;
-}
-.skills-details .experience .num{
-  color: #0E2431;
-  font-size: 80px;
-}
-.skills-details .experience .exp{
-  color: #0E2431;
-  margin-left: 20px;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 6px;
-}
 .skills-details .boxes{
   width: 45%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 30px;
+  flex-direction: column;
+  margin: 0 auto;
+
 }
-.skills-details .box{
-  width: calc(100% / 2 - 20px);
-  margin: 20px 0;
+
+@keyframes load{
+  from {
+    width: 0%
+  }
 }
-.skills-details .boxes .topic{
-  font-size: 20px;
-  color: #4070f4;
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
 }
-.skills-details .boxes .per{
-  font-size: 60px;
-  color: #4070f4;
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #EEE;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+  animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: #ffcc33;
+}
+.bar.back::before{
+  background-color: #a6cfe3;
+}
+
+.bar.learning::before{
+  width: calc(20% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(80% - 10px);
+}
+.bar.advanced::before{
+  width: calc(90% - 10px);
+}
+.bar.expert::before{
+  width: calc(100% - 10px);
 }
 
 /* My Projects CSS */
@@ -381,7 +411,8 @@ section .button button:hover{
 }
 /* Contact Me CSS */
 .contact{
-  background: #F0F8FF;
+  background: #ffffff;
+  height: 100vh;
 }
 .contact .content{
   margin: 0 auto;
@@ -391,6 +422,12 @@ section .button button:hover{
   width: 80%;
   text-align: center;
   margin: auto;
+}
+
+.text i{
+  font-size: 40px;
+  cursor: pointer;
+  margin: 40px auto;
 }
 
 /* Footer CSS */
@@ -429,7 +466,7 @@ footer .text span a:hover{
 /* Responsive Media Query */
 @media (max-width: 1190px) {
   section .content{
-    width: 85%;
+    width: 100%;
   }
 }
 @media (max-width: 1000px) {
@@ -453,8 +490,7 @@ footer .text span a:hover{
 }
 @media (max-width: 900px) {
   .about .left img{
-    height: 350px;
-    width: 350px;
+    width: 300px;
   }
 }
 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <title>Rosinta Anggraini</title>
     <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,16 +61,15 @@
         <div class="title"><span>About Me</span></div>
         <div class="about-details">
           <div class="left">
-            <img src="images/about.jpg" alt="" />
+            <img src="img/Foto_RosintaA.jpg" alt="" />
           </div>
           <div class="right">
-            <div class="topic">Designing Is My Passion</div>
+            <div class="topic">Programming Is My Passion</div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, porro veritatis pariatur, nobis voluptatem ipsum repellat nemo quisquam error reprehenderit recusandae odio vel, suscipit. Voluptas mollitia accusantium quaerat aspernatur labore dolorum placeat ipsa sint nam perspiciatis eos consectetur veritatis debitis, quis aliquam unde sed maiores sit! Hic molestiae optio iste
-              iure earum amet nostrum quaerat facere quae veniam maiores harum iusto aperiam vel inventore illo voluptatibus voluptates quo impedit voluptatum error vitae, omnis praesentium? Aperiam nulla non, nesciunt fuga rem perferendis alias et, temporibus, distinctio culpa unde a laborum libero ducimus. Facilis veniam sit praesentium, voluptatibus sint maxime iusto eaque.
-            </p>
+            Saya Rosinta Anggraini lulusan informatika Desember tahun 2022 UPN "Veteran" Yogyakarta dengan IPK 3,63. Saya memiliki pengalaman magang pada PT. Angkasa Pura I Yogyakarta pada bagian IT sebagai Web Developer. Dan juga memiliki pengalaman kerja sebagai Programmer pada Fresh Consultant Group tahun 2023.
+           </p>
             <div class="button">
-              <button>Download CV</button>
+              <!-- <button>Download CV</button> -->
             </div>
           </div>
         </div>
@@ -82,34 +82,15 @@
       <div class="content">
         <div class="title"><span>My Skills</span></div>
         <div class="skills-details">
-          <div class="text">
-            <div class="topic">Skills Reflects Our Knowledge</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus natus tenetur tempora? Quasi, rem quas omnis. Porro rem aspernatur reiciendis ut praesentium minima ad, quos, officia! Illo libero, et, distinctio repellat sed nesciunt est modi quaerat placeat. Quod molestiae, alias?</p>
-            <div class="experience">
-              <div class="num">10</div>
-              <div class="exp">
-                Years Of <br />
-                Experience
-              </div>
-            </div>
-          </div>
           <div class="boxes">
-            <div class="box">
-              <div class="topic">HTML</div>
-              <div class="per">90%</div>
-            </div>
-            <div class="box">
-              <div class="topic">CSS</div>
-              <div class="per">80%</div>
-            </div>
-            <div class="box">
-              <div class="topic">JavScript</div>
-              <div class="per">70%</div>
-            </div>
-            <div class="box">
-              <div class="topic">PHP</div>
-              <div class="per">60%</div>
-            </div>
+              <div class="bar expert" data-skill="HTML"></div>
+              <div class="bar expert" data-skill="CSS"></div>
+              <div class="bar back advanced" data-skill="Javascript"></div>
+              <div class="bar back advanced" data-skill="PHP"></div>
+              <div class="bar front intermediate" data-skill="NodeJS"></div>
+              <div class="bar front intermediate" data-skill="ReactJS"></div>
+              <!-- <div class="bar front intermediate" data-skill="Node JS"></div>
+              <div class="bar front intermediate" data-skill="React JS"></div> -->
           </div>
         </div>
       </div>
@@ -148,10 +129,10 @@
             <div class="sub-topic">(PT. Angkasa Pura I Yogyakarta)</div>
             <p>Sistem Peminjaman Mobil ini adalah aplikasi berbasis web yang dibuat
               dengan menggunakan bahasa pemrograman PHP, dan juga menggunakan
-              framework yaitu CodeIgniter 3. Aplikasi ini memakai database phpMyAdmin.
+              framework yaitu CodeIgniter. Aplikasi ini memakai database MySql.
               User yang akan menggunakan aplikasi ini adalah bagian admin dan peminjam dari
               seluruh departemen PT. Angkasa Pura I (Persero) Yogyakarta. Masing-masing
-              akan memiliki hak akses yang berbeda, sesuai dengan bagian yang dikelolanya.</p>
+              user memiliki hak akses yang berbeda, sesuai dengan bagian yang dikelolanya.</p>
           </div>
           <div class="box">
             <div class="icon">
@@ -175,14 +156,12 @@
               </span>
               <button onclick="mfunction()" id="btn">Load More</button>
             </div>
-            <div class="topic">Sistem Peminjaman Mobil</div>
-            <div class="sub-topic">(PT. Angkasa Pura I Yogyakarta)</div>
-            <p>Sistem Peminjaman Mobil ini adalah aplikasi berbasis web yang dibuat
+            <div class="topic">Sistem Prediksi Ketinggian Air</div>
+            <div class="sub-topic">(Skripsi)</div>
+            <p>Sistem Prediksi Ketinggian Air Sungai ini merupakan aplikasi berbasis web yang dibuat
               dengan menggunakan bahasa pemrograman PHP, dan juga menggunakan
-              framework yaitu CodeIgniter 3. Aplikasi ini memakai database phpMyAdmin.
-              User yang akan menggunakan aplikasi ini adalah bagian admin dan peminjam dari
-              seluruh departemen PT. Angkasa Pura I (Persero) Yogyakarta. Masing-masing
-              akan memiliki hak akses yang berbeda, sesuai dengan bagian yang dikelolanya.</p>
+              framework yaitu Laravel. Aplikasi ini memakai database MySql. Script perhitungan pada sistem ini menerapkan perhitungan dari rumus yang telah ditentukan untuk memperoleh hasil prediksi.
+              User sistem dapat membuat,melihat,mengubah dan juga menghapus prediksi.   </p>
           </div>
         </div>
       </div>
@@ -193,11 +172,9 @@
       <div class="content">
         <div class="title"><span>Contact Me</span></div>
         <div class="text">
-          <div class="topic">Have Any Project?</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, facere numquam voluptate aspernatur sit perferendis qui nisi modi! Recusandae deserunt consequatur voluptatibus alias repellendus nobis eligendi.</p>
-          <div class="button">
-            <button>Let's Chat</button>
-          </div>
+          <i class='bx bxl-instagram'></i>
+          <i class='bx bxl-gmail'></i>
+          <i class='bx bxl-twitter'></i>
         </div>
       </div>
     </section>
