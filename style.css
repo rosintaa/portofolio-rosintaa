@@ -9,6 +9,12 @@
 
 }
 
+/* Tambahkan gaya CSS untuk mengatur ukuran gambar */
+.project-image {
+  width: 40%; /* Atur lebar gambar menjadi 100% dari parent container */
+}
+
+
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
     width: 10px;
